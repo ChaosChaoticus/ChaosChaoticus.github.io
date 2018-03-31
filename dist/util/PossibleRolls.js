@@ -267,7 +267,7 @@ var PossibleRolls = (function () {
             //console.log("maxDamage: %d", maxDamage);
             this.updateValue(effectiveDamage, maxDamage, calcDamageResult.probability);
         }
-        return effectiveDamage;  // Does NOT return actual damage, but propabilities to deal damage!
+        return effectiveDamage;  // Does NOT return actual damage, but probabilities to deal damage!
     };
 
     // Deflected Damage
@@ -282,7 +282,7 @@ var PossibleRolls = (function () {
             //console.log("maxDamage: %d", maxDefence);                                    // updateValue(dict, key, value)
             this.updateValue(deflectedDamage, maxDefence, calcDefenceResult.probability);  // really update the probability?
             }
-        return deflectedDamage; // Does NOT return actual number of shields, but propabilities to get shields!
+        return deflectedDamage; // Does NOT return actual number of shields, but probabilities to get shields!
     };
 
     ////////////////////////////////////////////////////////////////////////////
@@ -322,7 +322,7 @@ var PossibleRolls = (function () {
             counter++;
             }
 
-        return AttributeSuccess; // Does NOT return actual number of shields, but propabilities to get shields!
+        return AttributeSuccess; // Does NOT return actual number of shields, but probabilities to get shields!
 
 
     };

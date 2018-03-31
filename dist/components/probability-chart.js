@@ -112,8 +112,8 @@ var ProbabilityChart = (function () {
         }
         this._rawChartData.push(newChartData);
         var minValue = 0;
-        if (this._plottype === 'CP'){minValue=1};  // Cummulative Propability
-        if (this._plottype === 'PC'){minValue=1}; // Propability chart
+        if (this._plottype === 'CP'){minValue=1};  // Cumulative Probability
+        if (this._plottype === 'PC'){minValue=1}; // Probability chart
         var maxValue = this._chartMaxDamage;
         for (var v in newChartData) {
             maxValue = Math.max(maxValue, Number(v));
@@ -128,7 +128,7 @@ var ProbabilityChart = (function () {
         var cumulativeProb = 0;
         for (var i = maxValue; i >= minValue; i--) {
             if (this._plottype === 'CP') {
-            // For cummulative Probs
+            // For cumulative Probs
             cumulativeProb += (newChartData[i] === undefined) ? 0 : newChartData[i];
             }
             else{
