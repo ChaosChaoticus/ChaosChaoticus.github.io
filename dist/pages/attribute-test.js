@@ -50,7 +50,7 @@ var AttributeTest = (function () {
         possibleRolls.applyAllRolls(this.diceCount);
         //possibleRolls.showProb();
         var shields = possibleRolls.getAttributeResults(this.Value_to_Test);
-        // I need to transform the shields rolled into sucess propabilities and display these
+        // I need to transform the shields rolled into success probabilities and display these
         this.probabilityChart.selectPlotType('PC')
         this.probabilityChart.addChartData(shields); // Does this work without argument?
 
